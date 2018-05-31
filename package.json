@@ -1,0 +1,38 @@
+{
+  "name": "bytes-to-x",
+  "version": "1.0.0",
+  "description": "Convert from bytes to another unit e.g. Mibit, KiB, Gibit, Gib",
+  "source": "src/index.js",
+  "main": "dist/bytes-to-x.js",
+  "browser": "dist/bytes-to-x.umd.js",
+  "module": "dist/bytes-to-x.m.js",
+  "repository": "https://github.com/tiaanduplessis/bytes-to-x",
+  "author": "Tiaan du Plessis",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest",
+    "build": "microbundle",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^23.1.0",
+    "microbundle": "^0.4.4",
+    "standard": "^11.0.1"
+  },
+  "keywords": [
+    "bytes",
+    "convert",
+    "convert-to",
+    "byte-converter"
+  ],
+  "standard": {
+    "ignore": "dist",
+    "env": {
+      "jest": true
+    }
+  }
+}
